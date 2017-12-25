@@ -24,7 +24,6 @@ bin/imsqmidaemon
 bin/dpmd
 bin/qseecomd
 bin/energy-awareness
-bin/btnvtool
 bin/xtwifi-inet-agent
 etc/dpm/dpm.conf
 etc/dpm/nsrm/NsrmConfiguration.xml
@@ -406,7 +405,6 @@ vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_hdr_be_stats46.so
 vendor/lib/libmmcamera_isp_gtm46.so
 vendor/lib/libvoice-svc.so
-vendor/lib/sensors.oem.so
 vendor/lib64/libulp2.so
 vendor/lib64/libcneqmiutils.so
 vendor/lib64/lib-rtpsl.so
@@ -605,7 +603,6 @@ vendor/lib64/libsmemlog.so
 vendor/lib64/libvoice-svc.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib64/libStDrvInt.so
-vendor/lib64/sensors.oem.so
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/etc/RIDL/qdss.cfg
 vendor/etc/sensors/hals.conf
