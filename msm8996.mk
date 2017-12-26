@@ -144,10 +144,13 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
+    libcurl \
     libgnss \
     libgnsspps \
-    libcurl \
-    gps.conf
+    libgps.utils \
+    liblocation_api \
+    gps.conf \
+    gps.msm8996
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
