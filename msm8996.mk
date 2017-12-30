@@ -36,7 +36,8 @@ $(call inherit-product-if-exists, vendor/zuk/msm8996-common/msm8996-common-vendo
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-aquarios
 
 # Permissions
 PRODUCT_COPY_FILES += \
