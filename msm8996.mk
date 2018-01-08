@@ -132,6 +132,9 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne \
     services-ext
 
+# Dalvik overrides
+$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
+
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8996 \
@@ -166,6 +169,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     $(LOCAL_PATH)/gps/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     $(LOCAL_PATH)/gps/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
+
+# HWUI overrides
+$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
 # Graphics
 PRODUCT_PACKAGES += \
