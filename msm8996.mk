@@ -27,10 +27,16 @@ $(call inherit-product, vendor/zuk/msm8996-common/msm8996-common-vendor.mk)
 # Hidl HALs
 $(call inherit-product, $(LOCAL_PATH)/hidl.mk)
 
+# apn from marlin
+PRODUCT_COPY_FILES := device/zuk/msm8996-common/configs/apns-full-conf.xml:system/etc/apns-conf.xml
+
+$(call inherit-product, vendor/aquarios/config/utils.mk)
+
+$(call inherit-product-if-exists, vendor/zuk/msm8996-common/msm8996-common-vendor.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
