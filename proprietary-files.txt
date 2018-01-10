@@ -450,7 +450,6 @@ vendor/lib64/libizat_core.so
 vendor/lib64/libimsmedia_jni.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libaudioalsa.so
-vendor/lib64/libuiblur.so
 vendor/lib64/lib-rtpdaemoninterface.so
 vendor/lib64/lib_remote_simlock.so
 vendor/lib64/libril-qcril-hook-oem.so
