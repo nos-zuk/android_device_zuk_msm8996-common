@@ -118,8 +118,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Camera2 \
-    camera.msm8996
+    Camera2
 
 # Display
 PRODUCT_PACKAGES += \
