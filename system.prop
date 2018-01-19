@@ -137,6 +137,7 @@ persist.radio.sib16_support=1
 persist.radio.sw_mbn_volte=1
 persist.radio.sw_mbn_openmkt=1
 persist.radio.sw_mbn_update=1
+persist.radio.aosp_usr_pref_sel=true
 
 # RmNet Data
 persist.rmnet.data.enable=true
