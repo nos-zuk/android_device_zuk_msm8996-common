@@ -124,7 +124,10 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    Camera2 \
+    camera.msm8996 \
+    libmm-qcamera \
+    mm-qcamera-app
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
