@@ -147,8 +147,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/calib.cfg:system/etc/calib.cfg
 
 # Doze mode
-PRODUCT_PACKAGES += \
-    ZukDoze
+#PRODUCT_PACKAGES += \
+#    ZukDoze
 
 # For config.fs
 PRODUCT_PACKAGES += \
