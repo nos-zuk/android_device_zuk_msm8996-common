@@ -270,6 +270,10 @@ PRODUCT_PACKAGES += \
     readmac \
     wpa_supplicant \
     wpa_supplicant.conf
+	
+# Setup dalvik vm and hwui configs from NOS.
+$(call inherit-product, vendor/nitrogen/config/phone-xxhdpi-4096-dalvik-heap.mk)
+$(call inherit-product, vendor/nitrogen/config/phone-xxhdpi-2048-hwui-memory.mk)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
