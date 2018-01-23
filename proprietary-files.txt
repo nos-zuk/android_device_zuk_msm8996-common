@@ -1,6 +1,5 @@
 bin/port-bridge
 bin/hci_qcomm_init
-bin/cnss-daemon
 bin/wcnss_filter
 bin/time_daemon
 bin/adsprpcd
@@ -29,7 +28,6 @@ etc/firmware/cpp_firmware_v1_5_0.fw
 etc/firmware/cpp_firmware_v1_4_0.fw
 etc/firmware/a530_zap.b00
 etc/firmware/cpp_firmware_v1_6_0.fw
-etc/firmware/bdwlan30.bin
 etc/firmware/nvm_tlv_3.0.bin
 etc/firmware/leia_pm4_470.fw
 etc/firmware/rampatch_tlv_3.0.tlv
