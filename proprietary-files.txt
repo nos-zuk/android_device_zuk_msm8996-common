@@ -4,8 +4,6 @@ bin/wcnss_filter
 bin/time_daemon
 bin/adsprpcd
 bin/sensors.qcom
-bin/xtwifi-inet-agent
-etc/xtra_root_cert.pem
 etc/firmware/a225_pm4.fw
 etc/firmware/a420_pm4.fw
 etc/firmware/a225_pfp.fw
@@ -105,7 +103,6 @@ vendor/lib/libmmcamera_isp_bpc47.so
 vendor/lib/lib-rtpcore.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libmmcamera_thread_services.so
-vendor/lib/libslimclient.so
 vendor/lib/libbtnv.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libqmi_common_so.so
@@ -127,7 +124,6 @@ vendor/lib/lib-imsSDP.so
 vendor/lib/libmmcamera_isp_bf_stats47.so
 vendor/lib/vendor.display.color@1.0_vendor.so
 vendor/lib/libllvm-glnext.so
-vendor/lib/lib_drplugin_server.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_isp_cs_stats46.so
 vendor/lib/libubifocus.so
@@ -198,7 +194,6 @@ vendor/lib/libqmiservices.so
 vendor/lib/libOmxApeDec.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqti_performance.so
-vendor/lib/libquipc_os_api.so
 vendor/lib/libmorpho_image_stab4.so
 vendor/lib/libmmcamera_isp_black_level47.so
 vendor/lib/libmmcamera2_stats_algorithm.so
@@ -343,7 +338,6 @@ vendor/lib64/libizat_client_api.so
 vendor/lib64/libxtwifi_ulp_adaptor.so
 vendor/lib64/lib-rtpcore.so
 vendor/lib64/liblowi_client.so
-vendor/lib64/libslimclient.so
 vendor/lib64/libbtnv.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libqmi_common_so.so
@@ -357,7 +351,6 @@ vendor/lib64/libmmcamera2_memleak.so
 vendor/lib64/lib-imsSDP.so
 vendor/lib64/vendor.display.color@1.0_vendor.so
 vendor/lib64/libllvm-glnext.so
-vendor/lib64/lib_drplugin_server.so
 vendor/lib64/libsecureui.so
 vendor/lib64/libxml.so
 vendor/lib64/libFidoCryptoJNI.so
@@ -387,6 +380,9 @@ vendor/lib64/libcne.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/libvpphvx.so
 vendor/lib64/liblbs_core.so
+-vendor/lib64/libloc_api_v02.so
+vendor/lib64/libloc_ds_api.so
+vendor/lib64/libloc_externalDr.so
 vendor/lib64/libdiag.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/sensors.ssc.so
@@ -716,17 +712,22 @@ vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 vendor/radio/qcril_database/qcril.db
 
 # GPS
-lib/vendor.qti.gnss@1.0.so
+etc/permissions/com.qti.location.sdk.xml
+etc/permissions/com.qualcomm.location.xml
+etc/permissions/izat.xt.srv.xml
+framework/com.qti.location.sdk.jar
+framework/izat.xt.srv.jar
+lib64/liblocationservice_jni.so
+lib64/libxt_native.so
 lib64/vendor.qti.gnss@1.0.so
--vendor/lib64/libloc_api_v02.so
-vendor/lib64/libloc_ds_api.so
+priv-app/com.qualcomm.location/com.qualcomm.location.apk
 vendor/bin/hw/vendor.qti.gnss@1.0-service
-vendor/bin/slim_daemon
 vendor/bin/loc_launcher
+vendor/bin/lowi-server
+vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
 vendor/etc/init/vendor.qti.gnss@1.0-service.rc
-vendor/lib/vendor.qti.gnss@1.0_vendor.so
-vendor/lib/hw/vendor.qti.gnss@1.0-impl.so
-vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so
-vendor/lib64/libloc_externalDr.so
+vendor/etc/xtra_root_cert.pem
+vendor/bin/xtwifi-inet-agent
+vendor/etc/cacert_location.pem
 vendor/lib64/vendor.qti.gnss@1.0_vendor.so
