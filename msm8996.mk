@@ -135,8 +135,9 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne \
     services-ext
 
-# Dalvik overrides
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
+# Setup dalvik vm and hwui configs from NOS.
+$(call inherit-product, vendor/nitrogen/config/phone-xxhdpi-4096-dalvik-heap.mk)
+$(call inherit-product, vendor/nitrogen/config/phone-xxhdpi-2048-hwui-memory.mk)
 
 # Display
 PRODUCT_PACKAGES += \
@@ -173,13 +174,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     $(LOCAL_PATH)/gps/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
 
-# HWUI overrides
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
-
 # Graphics
 PRODUCT_PACKAGES += \
     libsdm-disp-apis
-
 
 # IMS
 PRODUCT_PACKAGES += \
